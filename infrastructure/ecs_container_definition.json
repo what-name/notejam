@@ -1,0 +1,42 @@
+[
+  {
+    "name": "worker",
+    "image": "${image}",
+    "portMappings": [
+      {
+        "protocol": "tcp",
+        "containerPort": ${container_port}
+    }
+    ],
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "${log_group}",
+        "awslogs-region": "${region}",
+        "awslogs-stream-prefix": "ecs"
+      }
+    },
+    "environment": [
+      {
+        "name": "DB_HOST",
+        "value": "${db_host}"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "${db_port}"
+      },
+      {
+        "name": "DB_NAME",
+        "value": "${db_name}"
+      },
+      {
+        "name": "DB_PASS",
+        "value": "${db_password}"
+      },
+      {
+        "name": "DB_USER",
+        "value": "${db_username}"
+      }
+    ]
+  }
+]

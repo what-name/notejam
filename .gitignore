@@ -1,0 +1,5 @@
+.idea
+infrastructure/.terraform/
+infrastructure/terraform.tfstate.d/
+.DS_Store
+infrastructure/.terraform.lock.hcl
