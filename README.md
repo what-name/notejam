@@ -3,6 +3,7 @@
 Dev environment is set up and running on aws: http://dev.notejam.caner.cloud
 
 Source code: https://github.com/DerinMavi/notejam
+yea
 
 Folder structure:
 
